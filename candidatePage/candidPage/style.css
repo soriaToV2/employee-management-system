@@ -1,0 +1,286 @@
+body {
+    background-color: #f5f6fa;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.hero {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+#sidebar-wrapper .sidebar-header .avatar {
+    width: 60px;
+    height: 60px;
+    background: #ffffff33;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#sidebar-wrapper .list-group-item {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    color: #fff;
+}
+
+#sidebar-wrapper .list-group-item:hover {
+    background: #ffffff1a;
+}
+
+#sidebar-wrapper .list-group-item.active {
+    background: #ffffff33 !important;
+}
+
+#page-content-wrapper {
+    background-color: #f5f6fa;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead th {
+    background: #e9ecef;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.btn-primary,
+.btn-danger,
+.btn-secondary {
+    border-radius: 8px !important;
+    padding: 6px 14px !important;
+    font-weight: 500;
+}
+
+.btn-outline-danger {
+    border-width: 2px;
+}
+
+.card {
+    border-radius: 16px !important;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background: #fff;
+    color: #333;
+}
+
+.card img {
+    border-radius: 12px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.tab-content > .tab-pane {
+    padding: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+#notificationsBtn i {
+    font-size: 1.25rem;
+}
+
+.theme-icon-light {
+    color: #f7c32e;
+}
+
+.theme-icon-dark {
+    color: #0d6efd;
+}
+
+@media (max-width: 992px) {
+    #sidebar-wrapper { width: 200px; }
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper { display: none; }
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #1d1f23;
+    color: #e4e4e4;
+}
+
+body.dark-theme #page-content-wrapper,
+body.dark-theme .tab-content {
+    background-color: #1d1f23 !important;
+    color: #e4e4e4 !important;
+}
+
+body.dark-theme #sidebar-wrapper {
+    background-color: #121417 !important;
+    color: #e4e4e4 !important;
+}
+
+body.dark-theme #sidebar-wrapper .list-group-item {
+    color: #e4e4e4 !important;
+}
+
+body.dark-theme #sidebar-wrapper .list-group-item:hover {
+    background: #ffffff22 !important;
+}
+
+body.dark-theme #sidebar-wrapper .list-group-item.active {
+    background-color: #ffffff33 !important;
+}
+
+body.dark-theme .navbar {
+    background-color: #1f2125 !important;
+    border-color: #2c2f34 !important;
+}
+
+body.dark-theme .navbar .navbar-brand,
+body.dark-theme .navbar .nav-link,
+body.dark-theme .navbar .btn {
+    color: #e4e4e4 !important;
+}
+
+body.dark-theme .hero {
+    background-color: #26282d;
+    color: #e4e4e4;
+}
+
+body.dark-theme .card {
+    background-color: #26282d;
+    box-shadow: none;
+    color: #e4e4e4;
+}
+
+body.dark-theme .card .card-title { color: #fff; }
+body.dark-theme .card .text-muted { color: #bbbbbb !important; }
+
+body.dark-theme .table,
+body.dark-theme .table thead,
+body.dark-theme .table tbody,
+body.dark-theme .table tfoot,
+body.dark-theme .table tr,
+body.dark-theme .table td,
+body.dark-theme .table th {
+    background-color: transparent !important;
+    color: #e4e4e4 !important;
+}
+
+body.dark-theme .table thead th {
+    background-color: #2c2f34 !important;
+}
+
+body.dark-theme .table tbody tr {
+    background-color: #2b2d31 !important;
+}
+
+body.dark-theme .table-hover tbody tr:hover {
+    background-color: #34373d !important;
+    color: #fff !important;
+}
+
+body.dark-theme input,
+body.dark-theme .form-control,
+body.dark-theme .dropdown-menu {
+    background-color: #2b2d31 !important;
+    color: #e4e4e4 !important;
+    border-color: #404349 !important;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder,
+body.dark-theme .form-control::placeholder {
+    color: #bbbbbb !important;
+    opacity: 1;
+}
+
+body.dark-theme .dropdown-menu {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+body.dark-theme .btn-primary { background-color: #0d6efd !important; border-color: #0d6efd !important; }
+body.dark-theme .btn-secondary { background-color: #6c757d !important; }
+body.dark-theme .btn-danger { background-color: #dc3545 !important; }
+body.dark-theme .btn-outline-danger {
+    color: #ff6b6b !important;
+    border-color: #ff6b6b !important;
+}
+body.dark-theme .btn-outline-danger:hover {
+    background-color: #ff6b6b !important;
+    color: #000 !important;
+}
+body.dark-theme .btn-outline-primary {
+    color: #75a7ff !important;
+    border-color: #75a7ff !important;
+}
+body.dark-theme .btn-outline-primary:hover {
+    background-color: #75a7ff !important;
+    color: #000 !important;
+}
+
+/* Normal sidebar */
+#sidebar-wrapper {
+    width: 250px;
+    transition: transform 0.3s ease;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+#page-content-wrapper {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Sidebar collapsed */
+#wrapper.sidebar-collapsed #sidebar-wrapper {
+    transform: translateX(-100%);
+}
+
+#wrapper.sidebar-collapsed #page-content-wrapper {
+    margin-left: 0;
+}

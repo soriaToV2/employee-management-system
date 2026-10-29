@@ -1,0 +1,19 @@
+# Secrets - never commit these
+candidatePage/service-account-key.json
+candidatePage/google_config.php
+hrPage/sendgrid/config.php
+
+# Composer dependencies (run `composer install` in each folder that has a composer.json)
+vendor/
+
+# Files uploaded by candidates
+candidatePage/uploads/*
+!candidatePage/uploads/.gitkeep
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
